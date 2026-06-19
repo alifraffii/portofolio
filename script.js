@@ -137,8 +137,8 @@ navLinks.forEach(link => {
             });
 
             if (window.innerWidth <= 768) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+                if (hamburger) hamburger.classList.remove('active');
+                if (navMenu) navMenu.classList.remove('active');
                 document.body.style.overflow = '';
             }
         }
